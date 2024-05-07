@@ -1,0 +1,37 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Details</title>
+</head>
+<body>
+
+<h2>Payment Details</h2>
+
+<table border="1">
+    <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Grade</th>
+        <th>Basic Salary</th>
+        <th>HRA</th>
+        <th>DA</th>
+        <th>TA</th>
+        <th>Total Salary</th>
+    </tr>
+
+    <tr th:if="${paymentDetails != null}">
+        <td th:text="${paymentDetails.empID}"></td>
+        <td th:text="${paymentDetails.employeeName}"></td>
+        <td th:text="${paymentDetails.grade}"></td>
+        <td th:text="${paymentDetails.baseSalary}"></td>
+        <td th:text="${paymentDetails.HRA}"></td>
+        <td th:text="${paymentDetails.DA}"></td>
+        <td th:text="${paymentDetails.TA}"></td>
+        <td th:text="${paymentDetails.PF}"></td>
+        <td th:text="${paymentDetails.totalSalary}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

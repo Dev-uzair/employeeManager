@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+</head>
+<body>
+
+<h2>Enter Employee ID</h2>
+
+<form action="/payment/process" method="post">
+    <label for="employeeId">Employee ID:</label>
+    <input type="text" id="employeeId" name="employeeId" required>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
